@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button onclick="incrbyone()">incr by 1</button>
+	<button onclick="decrbyone()">decr by 1</button>
+	<p id="output_id"></p>
+	<script type="text/javascript">
+		var i=0;
+		function incrbyone(){
+			if(i<6){
+				document.getElementById('output_id').innerText=++i;
+
+			}
+
+		}
+		function decrbyone(){
+			if(i>0){
+				document.getElementById('output_id').innerText=--i;
+			}
+		}
+		
+	</script>
+
+</body>
+</html>
